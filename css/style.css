@@ -40,33 +40,6 @@ body{
     z-index: 10;
 
 }
-.main-content .hero{
-    /*height: 100vh;*/
-    background: #101010;
-    padding-bottom: 20px;
-}
-.main-content .hero h4{
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.main-content .hero h1{
-    padding-top: 0;
-    padding-left: 50px;
-}
-.main-content .hero h3{
-    padding-left: 50px;
-}
-.main-content .hero .newsletter{
-    padding-left: 190px;
-    padding-top: 0;
-}
-.main-content .hero p{
-    color: white;
-    padding-left: 50px;
-}
-
 .aside .logo{
     color: white;
     top: 50px;
@@ -94,6 +67,33 @@ body{
     text-transform: capitalize;
     padding: 5px 15px;
 }
+.main-content .hero{
+    /*height: 100vh;*/
+    background: #101010;
+    padding-bottom: 20px;
+}
+.main-content .hero h4{
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.main-content .hero h1{
+    padding-top: 0;
+    padding-left: 50px;
+}
+.main-content .hero h3{
+    padding-left: 50px;
+}
+.main-content .hero .newsletter{
+    padding-left: 190px;
+    padding-top: 0;
+}
+.main-content .hero p{
+    color: white;
+    padding-left: 50px;
+}
+
 span{
     color: rgb(29, 29, 179);
 }
@@ -273,9 +273,10 @@ button:hover{
 }
 /*projects*/
 .project{
-    background-color:rgb(6, 1, 10);
+    background-color: #191919;
 }
 .project h2{
+    padding-top: 0;
     color: white;
 }
 .project-heading h2{
@@ -342,6 +343,8 @@ h5{
     color: white;
 }
 .section-title h2{
+    padding-top: 100px;
+    padding-bottom: 30px;
     color: white;
     font-size: 75px;
     text-transform: capitalize;
@@ -378,4 +381,152 @@ h5{
     background-color: transparent;
     border: 2px solid rgb(29, 29, 179);
     cursor: pointer;
+}
+/*reponsive*/
+@media only screen and (max-width: 700px) {
+    .body{
+        width: 100%;
+        overflow: hidden;
+    }
+    .aside{
+        display: none;
+        width: 1px;
+        right: 1;
+    }
+    .main-content{
+        width: 100%;
+        left: 0;
+    }
+    .main-content .hero{
+        /*height: 100vh;*/
+        background: #101010;
+        padding-bottom: 10px;
+    }
+    .main-content .hero h4{
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .main-content .hero h1{
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    .main-content .hero h3{
+        padding-left: 20px;
+    }
+    .main-content .hero .newsletter{
+        padding-left: 80px;
+        padding-top: 0;
+    }
+    .main-content .hero p{
+        color: white;
+        padding-left: 20px;
+    }
+    .aside .nav li a i{
+        margin-right: 7px;
+     }
+     .hero .email-link{
+        background-color: rgb(29, 29, 179);
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 30px;
+        transition: transform .4s;
+     }
+     h1{
+        color: white;
+        margin: 20px 0px 20px;
+        font-size: 45px;
+     }
+     h3{
+        color: white;
+        font-size: 25px;
+        margin-bottom: 25px;
+     }
+    h4{
+        color: rgb(112, 116, 117);
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+    .about{
+        width: 100%;
+        padding: 2px 0px;
+        background-color: #191919;
+        display: block;
+    }
+    .about img{
+        height: auto;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .about h2{
+        color: white;
+        margin: 10px 0px 10px;
+        font-size: 45px;
+     }
+     .about p{
+        color: white;
+        margin: 10px 0px 10px;
+        font-size: 15px;
+        width: 100%;
+     }
+    .main{
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .service .title h2{
+        display: none;
+    }
+    .box{
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .about .row  .skills{
+        padding-left: 20px;
+        width: 100%;
+    }
+    .row-images{
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .project {
+        width: 100%;
+        align-items: center;
+        float: none;
+    }
+    .project .container .row .section-title h2{
+        padding-left: 30px;
+    }
+    .project .container p{
+        color: white;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .contact-me{
+        align-items: center;
+        padding-left: 0;
+        text-align: left;
+    }
+    .section-title h2{
+        padding-left: 30px;
+        font-size: 45px;
+        padding-top: 10px;
+    }
+    .everything{
+        text-align: left;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }.everything .image{
+        display: none;
+    }
+
+    
 }
